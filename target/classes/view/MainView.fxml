@@ -18,7 +18,7 @@
 <AnchorPane prefHeight="848.0" prefWidth="1091.0" stylesheets="@../css/MainViewStileSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controler.MainViewControler">
    <children>
       <Button fx:id="btnNewStudent" layoutX="39.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnNewStudentOnAction" prefHeight="40.0" prefWidth="115.0" text="+NEW Student" />
-      <VBox layoutX="81.0" layoutY="74.0" prefHeight="142.0" prefWidth="508.0" spacing="20.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="400.0">
+      <VBox layoutX="81.0" layoutY="74.0" prefHeight="142.0" prefWidth="633.0" spacing="20.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="373.0">
          <children>
             <HBox maxWidth="1.7976931348623157E308" spacing="10.0">
                <children>
@@ -26,10 +26,10 @@
                   <Label fx:id="lblGeneratedId" text="Generated ID" />
                </children>
             </HBox>
-            <HBox maxWidth="1.7976931348623157E308" spacing="10.0">
+            <HBox maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="400.0" spacing="10.0">
                <children>
                   <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="120.0" text="Student Name : " />
-                  <TextField fx:id="txtName" disable="true" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="331.0" promptText="Eg : Kasun Sampath" />
+                  <TextField fx:id="txtName" disable="true" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="400.0" promptText="Eg : Kasun Sampath" />
                </children>
             </HBox>
             <HBox maxWidth="1.7976931348623157E308" spacing="10.0">
@@ -43,19 +43,19 @@
                   <RadioButton fx:id="rdoFemale" disable="true" mnemonicParsing="false" onAction="#rdoGentOnAction" text="FeMale" toggleGroup="$set" />
                </children>
             </HBox>
-            <HBox prefHeight="30.0" prefWidth="528.0" spacing="10.0">
+            <HBox prefHeight="24.0" prefWidth="666.0" spacing="10.0">
                <children>
                   <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="120.0" text="Contacts : " />
-                  <TextField fx:id="txtContact" disable="true" onKeyReleased="#txtContactOnKeyReleased" prefHeight="24.0" prefWidth="269.0" promptText="Eg :xxx-xxxxxxx" />
-                  <Button fx:id="btnAdd" disable="true" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="50.0" prefWidth="66.0" text="ADD" />
+                  <TextField fx:id="txtContact" disable="true" onKeyReleased="#txtContactOnKeyReleased" prefHeight="24.0" prefWidth="388.0" promptText="Eg :xxx-xxxxxxx" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnAdd" disable="true" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="24.0" prefWidth="91.0" text="ADD" />
                </children>
             </HBox>
          </children>
       </VBox>
-      <HBox layoutX="211.0" layoutY="229.0" spacing="10.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="79.0">
+      <HBox layoutX="211.0" layoutY="229.0" prefHeight="115.0" prefWidth="507.0" spacing="10.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="373.0">
          <children>
-            <ListView fx:id="lstContact" disable="true" onKeyReleased="#lstContactOnKeyReleased" prefHeight="115.0" prefWidth="274.0" />
-            <Button fx:id="btnRemove" disable="true" mnemonicParsing="false" onAction="#btnRemoveOnAction" prefHeight="40.0" prefWidth="90.0" text="Remove" />
+            <ListView fx:id="lstContact" disable="true" onKeyReleased="#lstContactOnKeyReleased" prefHeight="115.0" prefWidth="388.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnRemove" disable="true" mnemonicParsing="false" onAction="#btnRemoveOnAction" prefHeight="25.0" prefWidth="91.0" text="Remove" />
          </children>
       </HBox>
       <HBox layoutX="75.0" layoutY="356.0" spacing="10.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="85.0">

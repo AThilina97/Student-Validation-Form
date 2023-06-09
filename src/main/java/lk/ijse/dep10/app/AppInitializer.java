@@ -20,7 +20,7 @@ public class AppInitializer extends Application {
         AnchorPane root =fxmlLoader.load();
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        primaryStage.setTitle("Student form Combo box Demo");
+        primaryStage.setTitle("Student form ");
         primaryStage.setMinHeight(850);
         primaryStage.setMinWidth(1095);
         primaryStage.centerOnScreen();
